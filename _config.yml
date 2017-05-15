@@ -45,8 +45,9 @@ minima:
 # - about.md
 
 # Build settings
-theme: minima
+theme: personal-website-theme
 
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
+markdown: kramdown
