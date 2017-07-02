@@ -4,27 +4,36 @@
   <div class="wrapper">
 
     <div class="footer-col-wrapper">
+
       <div class="footer-col one-half">
-      <h2 class="footer-heading">{{ site.title | escape }}</h2>
         <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- endif -%}
-            </li>
             {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            <li>Say hello: <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             {%- endif -%}
+          <li>
+            PGP key: <a href="https://pgp.mit.edu/pks/lookup?op=vindex&search=0xF5D7039AB119FBA6">F5D7039AB119FBA6</a>
+          </li>
         </ul>
       </div>
 
       <div class="footer-col one-half">
-        <p>{{- site.description | escape -}}</p>
+        <ul class="contact-list">
+          <li>
+            <a href="https://github.com/mkrnr/personal-website">Website</a> built with <a href="https://github.com/jekyll/jekyll">Jekyll</a> <br >
+          </li>
+          <li>
+            <a href="https://github.com/mkrnr/personal-website-theme">Theme</a> based on <a href="https://github.com/jekyll/minima">minima</a>
+          </li>
+          <li>
+            <a href="/impressum">Impressum / Legal disclosure</a>
+          </li>
+        </ul>
       </div>
 
       <div class="social-links">
         {%- include social.html -%}
       </div>
+
     </div>
 
   </div>
